@@ -1,0 +1,25 @@
+{
+  "name": "authentication-authorization-jwt",
+  "version": "1.0.0",
+  "description": "create api for authentication and authorization users",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pham Thai Hoa",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.1",
+    "nodemailer": "^6.5.0",
+    "nodemon": "^2.0.7",
+    "react-map-gl": "^6.1.16"
+  }
+}
