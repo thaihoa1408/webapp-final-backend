@@ -11,6 +11,25 @@ module.exports = function (app) {
   app.get("/entitygetrecordsdaily", controller.entityGetRecordsDaily);
   app.get("/entitygetrecordsmonthly", controller.entityGetRecordsMonthly);
   app.get("/entitygetrecordsyearly", controller.entityGetRecordsYearly);
+  //api get data for siteview page
   app.get("/siteview/chartinfor", controller.getDataSiteViewChartInfor);
   app.get("/siteview/invertertable", controller.getDataSiteviewInverterTable);
+  app.get("/siteview/productioninfor", controller.getDataSiteviewProduction);
+  app.get(
+    "/siteview/linecolumnchart",
+    controller.getDataSiteviewLineColumnChart
+  );
+  app.get(
+    "/siteview/linecolumnchart1",
+    controller.getDataSiteviewLineColumnChart1
+  );
+  app.get(
+    "/siteview/linecolumnchart2",
+    controller.getDataSiteviewLineColumnChart2
+  );
+  app.get("/siteview/linechart", controller.getDataSiteviewLineChart);
+  app.get("/siteview/linechart1", controller.getDataSiteviewLineChart1);
+  app.get("/siteview/linechart2", controller.getDataSiteviewLineChart2);
+  //api get data for sitelist page
+  app.get("/sitelist", controller.getDataSiteList);
 };
