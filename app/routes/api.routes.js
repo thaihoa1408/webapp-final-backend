@@ -32,4 +32,16 @@ module.exports = function (app) {
   app.get("/siteview/linechart2", controller.getDataSiteviewLineChart2);
   //api get data for sitelist page
   app.get("/sitelist", controller.getDataSiteList);
+  app.get("/leaderboard/production", controller.getDataLeaderboardProduction);
+  app.get(
+    "/leaderboard/performanceranking",
+    controller.getDataLeaderboardPerformanceRanking
+  );
+  app.get("/fleetview/overview", controller.getDataFleetviewOverview);
+  app.get("/fleetview/map", controller.getDataFleetviewMap);
+  app.get("/topologyanalysis/infor", controller.getDataTopologyAnalysisInfor);
+  app.get(
+    "/topologyanalysis/stringstate",
+    controller.getDataTopologyAnalysisStringState
+  );
 };

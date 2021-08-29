@@ -9,6 +9,11 @@ app.use(function (req, res, next) {
   );
   next();
 });
+//
+var multer = require("multer");
+var upload = multer();
+app.use(upload.array());
+//
 app.use(express.json()); // for parsing application/json
 app.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
